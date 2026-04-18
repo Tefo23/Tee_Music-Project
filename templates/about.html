@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="teeMusic | {{ title }}">
+	<meta property="og:description" content="teeMusic Recording Studio is a creative hub dedicated to helping artists transform their musical ideas into high-quality sound. Founded with a passion for music production and artistic expression, our studio provides a comfortable and professional environment where musicians, vocalists, and creators can bring their projects to life.">
+	<meta property="og:image" itemprop="image" content="">
+	<link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}" type="image/png">
+	
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+
+<header>
+<div class="container" style="padding:0px;">
+	<div class="row">
+		<div class="col-md-3">
+				<a  href="/">
+				
+				<img src="{{ url_for('static', filename='images/mylogo.png') }}" style="width:70%;" alt="logo Image">
+				</a>
+		</div>
+
+		<div class="col-md-9" align="right">
+			<nav >
+				<ul>
+				<li><a  href="/" class="">Home</a></li>
+				<li><a href="/about" class="nav-link">About</a></li>
+				<li><a href="/services" class="">Services</a></li>
+				<li><a href="/artists" class="">Artists</a></li>
+				<li><a href="/bookings" class="">Bookings</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	</div>
+</header>
+
+<main >
+
+<section id="aboutpage" class="container section animate"  style="margin-top:100px;">
+
+   <div class="row">
+        <div class="col-md-12 box">
+		 <div class="row">
+		<div class="col-md-4">
+		<img src="{{ url_for('static', filename='images/history.jpg') }}" style="width:100%;">
+		</div>
+            <div class="col-md-6 " style="padding:10px;margin-left:20px;">
+           
+			
+                
+				<h2>About Us – TeeMusic Recording Studio</h2>
+
+<p>teeMusic Recording Studio is a creative hub dedicated to helping artists transform their musical ideas into high-quality sound. Founded with a passion for music production and artistic expression, our studio provides a comfortable and professional environment where musicians, vocalists, and creators can bring their projects to life.
+<br><br>
+At teeMusic, we combine modern digital recording tools with skilled audio engineering to deliver crisp, polished, and industry-standard results. Whether you are recording vocals, producing beats, mixing tracks, or mastering your final project, our studio is equipped to support you at every stage of the process.
+<br><br>
+Our mission is to offer affordable, reliable, and high-quality recording services to both upcoming and established artists. We believe that great music starts with the right environment, and we are committed to creating a space where creativity thrives.
+<br><br>
+Join us at teeMusic Recording Studio and take your sound to the next level.</p>
+               
+        </div>
+		
+		</div>
+		</div>
+		
+		</div>
+	
+</section>
+
+
+
+</main>
+<footer >
+<div align="center">
+<img src="static/images/mylogo_retina.png" style="width:170px;">
+<a class="whatsapp_btn" target="_blank" href="https://web.whatsapp.com/">
+    <img src="static/images/whatsapp.png" alt="WhatsApp">
+	</a>
+	</div>
+    <p>&copy; 2026 TeeMusic Recording Studio | Designed By Tee  
+	
+	
+</p>
+
+</footer>
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

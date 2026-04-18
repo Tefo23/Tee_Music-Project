@@ -1,0 +1,391 @@
+/*PROFESSIONAL ACADEMY The Web Design Assignment represents 12% of the overall course grade.*/
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url('../images/bg.jpg');
+    color: #333;
+}
+
+/* HEADER */
+header {
+box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+-webkit-box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+-moz-box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+background: linear-gradient(to right, rgb(144, 202, 249), rgb(4, 126, 223) 99%) !important;
+color: white;
+text-align: center;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
+color: white;
+padding: 10px;
+}
+
+
+
+
+nav ul {
+    list-style: none;
+    padding: 20;
+	margin-top:20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+	padding:10px;
+	border-radius:20px;
+	background:transparent;
+	
+}
+.nav-link {
+ background:black;
+  color:white;	
+}
+
+nav a:hover {
+  background:black;
+  color:white;
+}
+nav .active {
+  background:black;
+  color:white;
+}
+
+/* Section spacing */
+.section {
+    padding: 80px 0;
+}
+
+/* Offset for fixed header */
+section {
+    scroll-margin-top: 120px;
+}
+
+/* INITIAL STATE */
+.animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* WHEN VISIBLE */
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* SLIDER CONTAINER */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* SLIDES WRAPPER */
+.slides {
+    display: flex;
+    width: 100%;
+    transition: transform 0.8s ease-in-out;
+}
+
+/* INDIVIDUAL SLIDE */
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* IMAGES */
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/* DOTS CONTAINER */
+.dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* DOT */
+.dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* ACTIVE DOT */
+.dot.active {
+    background: #ffffff;
+}
+
+
+
+
+
+/* CONTAINER FULL HEIGHT */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    min-height: 100%;       /* fills the full screen */
+    display: flex;
+    flex-direction: column; /* allows flexible vertical content */
+}
+/* GRID SYSTEM */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+[class*="col-"] {
+    padding: 3px;
+}
+
+.col-md-1  { width: 8.33%; }
+.col-md-2  { width: 15.66%; }
+.col-md-3  { width: 24%; }
+.col-md-4  { width: 32.33%; }
+.col-md-5  { width: 40.66%; }
+.col-md-6  { width: 49%; }
+.col-md-7  { width: 57.33%; }
+.col-md-8  { width: 65.66%; }
+.col-md-9  { width: 74%; }
+.col-md-10 { width: 82.33%; }
+.col-md-11 { width: 90.66%; }
+.col-md-12 { width: 100%; }
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+    [class^="col-md-"] {
+        width: 100%;
+    }
+	nav a {
+    font-size:12px;
+	
+}
+}
+
+/* COMPONENTS */
+.hero {
+    background: white;
+    padding: 30px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+	box-shadow: 10px 10px 9px -16px rgba(0,0,0,0.88);
+-webkit-box-shadow: 10px 10px 9px -16px rgba(0,0,0,0.88);
+-moz-box-shadow: 10px 10px 9px -16px rgba(0,0,0,0.88);
+}
+.box {
+    transition-delay: 0.2s;
+}
+.box:nth-child(2) { transition-delay: 0.3s; }
+.box:nth-child(3) { transition-delay: 0.5s; }
+
+.myBtn {
+background: linear-gradient(to right, rgb(255, 255, 153), rgb(255, 204, 102)) !important;
+color:black;
+padding:10px;
+font-size:13px;
+border-radius:100px;
+text-decoration: none;
+width:100%;
+}
+.myBtn:hover {
+background:black;
+
+}
+/* Space between form fields */
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs + Textareas */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+	
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* On focus */
+.form-control:focus {
+    border-color: #0099ff;
+    box-shadow: 0 0 5px rgba(0, 153, 255, 0.4);
+    outline: none;
+}
+
+/* Submit button */
+.btn {
+    padding: 10px 20px;
+    background: #0099ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #007acc;
+}
+
+.mybackground_one {
+	padding: 20px;
+    border-radius: 6px;
+
+		box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+		-webkit-box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+		-moz-box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+		
+		background: linear-gradient(to right, rgb(144, 202, 249), rgb(4, 126, 223) 99%) !important;
+			
+}
+.mybackground_two {
+	padding: 20px;
+    border-radius: 6px;
+box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+		-webkit-box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+		-moz-box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+		
+		    background: linear-gradient(to right, rgb(132, 217, 210), rgb(7, 205, 174)) !important;
+			
+}
+.mybackground_three {
+	padding: 20px;
+    border-radius: 6px;
+box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+		-webkit-box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+		-moz-box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+		
+		background: linear-gradient(to right, rgb(255, 255, 153), rgb(255, 204, 102)) !important;
+			
+}
+.mybackground_four {
+	padding: 20px;
+    border-radius: 6px;
+		box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+		-webkit-box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+		-moz-box-shadow: 10px 10px 18px -16px rgba(0,0,0,0.88);
+		
+		    background: linear-gradient(to right, rgb(255, 153, 153), rgb(255, 51, 51)) !important;
+			
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional shadow */
+    margin: 20px 0; /* Spacing around video */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.whatsapp_btn {
+    background: 333;
+    padding: 10px;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;              /* Enables centering */
+    align-items: center;        /* Centers vertically */
+    justify-content: center;    /* Centers horizontally */
+  
+}
+.whatsapp_btn:hover {
+    background: white;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15); /* Optional */
+}
+
+.whatsapp_btn img {
+    width: 90%;  /* better visibility */
+}
+
+
+
+.hvr-grow {
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: transform;
+transition-property: transform;
+cursor: pointer;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+
+
+
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding:10px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

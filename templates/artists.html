@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="teeMusic | {{ title }}">
+	<meta property="og:description" content="teeMusic Recording Studio is a creative hub dedicated to helping artists transform their musical ideas into high-quality sound. Founded with a passion for music production and artistic expression, our studio provides a comfortable and professional environment where musicians, vocalists, and creators can bring their projects to life.">
+	<meta property="og:image" itemprop="image" content="">
+	<link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}" type="image/png">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+
+<header>
+<div class="container" style="padding:0px;">
+	<div class="row">
+		<div class="col-md-3">
+				<a  href="/">
+				
+				<img src="{{ url_for('static', filename='images/mylogo.png') }}" style="width:70%;" alt="logo Image">
+				</a>
+		</div>
+
+		<div class="col-md-9" align="right">
+			<nav >
+				<ul>
+				<li><a  href="/" class="">Home</a></li>
+				<li><a href="/about" class="">About</a></li>
+				<li><a href="/services" class="">Services</a></li>
+				<li><a href="/artists" class="nav-link">Artists</a></li>
+				<li><a href="/bookings" class="">Bookings</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	</div>
+</header>
+
+<main >
+
+
+<section id="artistspage" class="container section animate"  style="margin-top:100px;">
+
+  <div class="row">
+        <div class="col-md-3 ">
+		<div class="box hvr-grow">
+		<img src="{{ url_for('static', filename='images/history.jpg') }}" style="width:100%;border-radius:10px;">
+		<h5>Name</h5>
+		<p>Genre: Country</p>
+		<p>Current Album: Roses</p>
+		<a href="#bookingspage" class="myBtn">Book Now</a>
+		</div>
+		</div>  
+		<div class="col-md-3 ">
+		<div class="box hvr-grow">
+		<img src="{{ url_for('static', filename='images/artist1.jpg') }}" style="width:100%;border-radius:10px;">
+		<h5>Name</h5>
+		<p>Genre: Country</p>
+		<p>Current Album: Roses</p>
+		<div>
+		<a href="#bookingspage"  style="width:100%;" class="myBtn">Book Now</a>
+		</div>
+		</div>
+		</div> 
+		
+		 <div class="col-md-3 ">
+		<div class="box hvr-grow">
+		<img src="{{ url_for('static', filename='images/artist2.jpg') }}" style="width:100%;border-radius:10px;">
+		<h5>Name</h5>
+		<p>Genre: Country</p>
+		<p>Current Album: Roses</p>
+		<a href="#bookingspage" class="myBtn">Book Now</a>
+		</div>
+		</div> 
+		
+		<div class="col-md-3 ">
+		<div class="box hvr-grow">
+		<img src="{{ url_for('static', filename='images/artist3.jpg') }}" style="width:100%;border-radius:10px;">
+		<h5>Name</h5>
+		<p>Genre: Country</p>
+		<p>Current Album: Roses</p>
+		<a href="#bookingspage"  class="myBtn">Book Now</a>
+		</div>
+		</div> 
+		
+		
+		</div>
+		<br>	<br>
+		
+		
+		
+		<div class="row">
+		 <div class="col-md-12 ">
+		<div class="box">
+		<h2>Upcoming Events</h2>
+		<table style="width:100%;"  border="0"  cellspacing="0" >
+			<tr>
+				<th>Title</th>
+				<th>Date</th>
+				<th>Location</th>
+				<th>Option</th>
+			</tr>
+			<tr>
+				<td>House Music Festival </td>
+				<td>22 Dec 2025</td>
+				<td>Spain</td>
+				<td><a  href="https://www.webtickets.co.za/v2/" title="Click to Buy Ticket" class="myBtn" target="_blank">Buy Ticket</a></td>
+			</tr>
+			<tr>
+				<td>HipHop Show </td>
+				<td>20 Dec 2025</td>
+				<td>Engalnd, London</td>
+				<td><a  href="https://www.webtickets.co.za/v2/" title="Click to Buy Ticket" class="myBtn" target="_blank">Buy Ticket</a></td>
+			</tr>
+			<tr>
+				<td>Beach Party</td>
+				<td>01 Jan 2026</td>
+				<td>USA, Miami</td>
+				<td><a  href="https://www.webtickets.co.za/v2/" title="Click to Buy Ticket" class="myBtn" target="_blank">Buy Ticket</a></td>
+			</tr>
+			<tr>
+				<td>Back To School Show</td>
+				<td>03 Jan 2026</td>
+				<td>Ireland, Dublin</td>
+				<td><a  href="https://www.webtickets.co.za/v2/" title="Click to Buy Ticket" class="myBtn" target="_blank">Buy Ticket</a></td>
+			</tr>
+		</table>
+		</div>	
+		</div>
+		</div>
+		
+		
+
+
+</section>
+
+
+
+</main>
+<footer >
+<div align="center">
+<img src="static/images/mylogo_retina.png" style="width:170px;">
+<a class="whatsapp_btn" target="_blank" href="https://web.whatsapp.com/">
+    <img src="static/images/whatsapp.png" alt="WhatsApp">
+	</a>
+	</div>
+    <p>&copy; 2026 TeeMusic Recording Studio | Designed By Tee  
+	
+	
+</p>
+
+</footer>
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

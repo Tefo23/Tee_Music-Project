@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="teeMusic | {{ title }}">
+	<meta property="og:description" content="teeMusic Recording Studio is a creative hub dedicated to helping artists transform their musical ideas into high-quality sound. Founded with a passion for music production and artistic expression, our studio provides a comfortable and professional environment where musicians, vocalists, and creators can bring their projects to life.">
+	<meta property="og:image" itemprop="image" content="">
+	<link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}" type="image/png">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+
+<header>
+<div class="container" style="padding:0px;">
+	<div class="row">
+		<div class="col-md-3">
+				<a  href="/">
+				
+				<img src="{{ url_for('static', filename='images/mylogo.png') }}" style="width:70%;" alt="logo Image">
+				</a>
+		</div>
+
+		<div class="col-md-9" align="right">
+			<nav >
+				<ul>
+				<li><a  href="/" class="nav-link">Home</a></li>
+				<li><a href="/about" class="">About</a></li>
+				<li><a href="/services" class="">Services</a></li>
+				<li><a href="/artists" class="">Artists</a></li>
+				<li><a href="/bookings" class="">Bookings</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	</div>
+</header>
+
+<main >
+
+<section id="homepage" class="container section animate" style="margin-top:110px;">
+
+    <div class="row" >
+        <div class="col-md-12">
+            <div class="hero">
+					<div class="slider">
+						<div class="slides">
+							<div class="slide">
+							<img src="{{ url_for('static', filename='images/slider.jpg') }}" alt="Slide 1">
+							</div>
+							<div class="slide">
+							<img src="{{ url_for('static', filename='images/slider2.jpg') }}" alt="Slide 2">
+							</div>
+							<div class="slide">
+							<img src="{{ url_for('static', filename='images/slider3.jpg') }}" alt="Slide 3">
+							</div>
+						</div>
+						
+						<div class="dots"></div>
+						
+					</div>
+					 
+	
+				
+					<h2>We’re a global collective of music lovers and music makers.</h2>
+					<p> First and foremost, we love music, and we work tirelessly to support the people who make it – the artists, the songwriters, the producers, and everyone else who helps turn inspiration into art that moves the world.
+					teeMusic Recording Studio is a creative hub dedicated to helping artists transform their musical ideas into high-quality sound. 
+					</p>
+				
+				
+				
+			</div>
+        </div>
+		
+		</div>
+		
+		 <div class="row">
+
+        <div class="col-md-4">
+            <div class="mybackground_three">
+			<img src="{{ url_for('static', filename='images/banner.jpg') }}" style="width:100%;">
+                <h3>We’re imaginative entrepreneurs and tech innovators.</h3>
+                <p>We believe that tech and music have always gone hand in hand, and we’re using our future-thinking approach to strengthen global services to artists. </p>
+            </div>
+        </div> 
+		<div class="col-md-4 ">
+            <div class="mybackground_two">
+			<img src="{{ url_for('static', filename='images/banner2.jpg') }}" style="width:100%;">
+                <h3>We know that great talent needs a passionate team</h3>
+                <p>The best teams are filled with individuals of diverse tastes, backgrounds, skillsets, beliefs, and lived experiences. </p>
+            </div>
+        </div>
+		<div class="col-md-4 ">
+            <div class="mybackground_four">
+			<div class="video-container">
+			<iframe width="994" height="559" src="https://www.youtube.com/embed/bxvXU5rM-9s" title="How a Multi-Platinum Singer Records Vocals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+ <h3>Watch our new Artists recording</h3>
+ <p>We’re committed to the growth of our people across the globe, upholding our values of curiosity, collaboration, and commitment. </p>
+</div>
+        </div>
+		
+    </div>
+
+</section>
+
+
+</main>
+<footer >
+<div align="center">
+<img src="static/images/mylogo_retina.png" style="width:170px;">
+<a class="whatsapp_btn" target="_blank" href="https://web.whatsapp.com/">
+    <img src="static/images/whatsapp.png" alt="WhatsApp">
+	</a>
+	</div>
+    <p>&copy; 2026 TeeMusic Recording Studio | Designed By Tee  
+	
+	
+</p>
+
+</footer>
+
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+</body>
+</html>

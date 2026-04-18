@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="teeMusic | {{ title }}">
+	<meta property="og:description" content="teeMusic Recording Studio is a creative hub dedicated to helping artists transform their musical ideas into high-quality sound. Founded with a passion for music production and artistic expression, our studio provides a comfortable and professional environment where musicians, vocalists, and creators can bring their projects to life.">
+	<meta property="og:image" itemprop="image" content="">
+	<link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}" type="image/png">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+<div class="container" style="padding:0px;">
+	<div class="row">
+		<div class="col-md-3">
+				<a  href="/">
+				
+				<img src="{{ url_for('static', filename='images/mylogo.png') }}" style="width:70%;" alt="logo Image">
+				</a>
+		</div>
+
+		<div class="col-md-9" align="right">
+			<nav >
+				<ul>
+				<li><a  href="/" class="">Home</a></li>
+				<li><a href="/about" class="">About</a></li>
+				<li><a href="/services" class="">Services</a></li>
+				<li><a href="/artists" class="">Artists</a></li>
+				<li><a href="/bookings" class="nav-link">Bookings</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	</div>
+</header>
+
+<main >
+
+
+
+<section id="bookingspage" style="margin-top:100px;" class="container section animate">
+  <div class="row">
+        <div class="col-md-4 ">
+		<div class="mybackground_three">
+		<img src="{{ url_for('static', filename='images/booking.jpg') }}" style="width:100%;border-radius:10px;">
+		
+		</div>
+		</div>  
+		<div class="col-md-8 ">
+			<div class="box">
+			<h2>Booking Form</h2>
+				<form>
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter your name">
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" class="form-control" placeholder="+00 00000">
+    </div> 
+	<div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" class="form-control" placeholder="Enter your email">
+    </div>
+	<div class="form-group">
+        <label for="type">Artist</label>
+        <select id="artist" class="form-control">
+		<option value="1">Artist One</option>
+		<option value="2">Artist Two</option>
+		<option value="3">Artist Three</option>
+		</select>
+    </div>
+
+    <div class="form-group">
+        <label for="msg">Message</label>
+        <textarea id="msg" class="form-control" rows="3" placeholder="Write your message"></textarea>
+    </div> 
+	
+	<div  id="form_status" style="margin-bottom:20px;">
+       
+    </div>
+
+    <a href="javascript:;" style="text-decoration:none;"  title="click to submit form" onclick="submit_booking()"  class="btn hvr-grow">Book Now</a>
+	<br>
+</form>
+			</div>
+		</div> 
+		
+		
+		
+		</div>
+		
+	
+
+</section>
+
+</main>
+<footer >
+<div align="center">
+<img src="static/images/mylogo_retina.png" style="width:170px;">
+<a class="whatsapp_btn" target="_blank" href="https://web.whatsapp.com/">
+    <img src="static/images/whatsapp.png" alt="WhatsApp">
+	</a>
+	</div>
+    <p>&copy; 2026 TeeMusic Recording Studio | Designed By Tee  
+	
+	
+</p>
+
+</footer>
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+</body>
+</html>
